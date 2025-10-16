@@ -1,0 +1,342 @@
+commit 9494de06d74d2b9aaa86420558f8871145ab8511
+Author: lewczvk <wikalitw.02@gmail.com>
+Date:   Thu Oct 16 16:13:12 2025 +0200
+
+    Revert "Usunięcie 1 lini refrenu"
+    
+    This reverts commit ea06ada69b922c395d327fe832ae174a662baff5.
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 66683d2..3f4e3db 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -18,7 +18,7 @@ Biorę do studia ten mandżur marny, ale ostatnio nieczęsto tam bywam
+ 
+ Refren 1:
+ Głucha noc
+-
++Miasto płacze znowu, czy wysłucha ktoś?
+ Cichosza, cichosza
+ Jest za cicho, także puszczaj to na blok (let's go!)
+ Głucha noc
+
+commit ea06ada69b922c395d327fe832ae174a662baff5
+Author: lewczvk <wikalitw.02@gmail.com>
+Date:   Thu Oct 16 16:11:50 2025 +0200
+
+    Usunięcie 1 lini refrenu
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 3f4e3db..66683d2 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -18,7 +18,7 @@ Biorę do studia ten mandżur marny, ale ostatnio nieczęsto tam bywam
+ 
+ Refren 1:
+ Głucha noc
+-Miasto płacze znowu, czy wysłucha ktoś?
++
+ Cichosza, cichosza
+ Jest za cicho, także puszczaj to na blok (let's go!)
+ Głucha noc
+
+commit 4a9c2d1249c604018ecb7bbe29bba1f799f1a3fb
+Author: lewczvk <wikalitw.02@gmail.com>
+Date:   Thu Oct 16 15:07:40 2025 +0200
+
+    Drugi refren
+
+diff --git a/refren2.txt b/refren2.txt
+new file mode 100644
+index 0000000..6df87b4
+--- /dev/null
++++ b/refren2.txt
+@@ -0,0 +1,10 @@
++Refren 2:
++Głucha noc
++Miasto płacze znowu, czy wysłucha ktoś?
++Cichosza, cichosza (hej, hej)
++Jest za cicho, także puszczaj to na blok (let's go)
++Głucha noc
++Miasto płacze znowu, czy wysłucha ktoś?
++Cichosza, cichosza
++Jest za cicho, także puszczaj to na blok
++
+
+commit 538af82a3033c59c9c9346c17884d7e9bb2b9007
+Author: lewczvk <wikalitw.02@gmail.com>
+Date:   Thu Oct 16 15:05:22 2025 +0200
+
+    Druga zwrotka
+
+diff --git a/zwrotka2.txt b/zwrotka2.txt
+new file mode 100644
+index 0000000..2027d8b
+--- /dev/null
++++ b/zwrotka2.txt
+@@ -0,0 +1,19 @@
++Zwrotka 2:
++Mój ziomo Boris na życie się targał
++Dowiedziałem się po latach, kiedy nagrywał mi wersy na Jarmark
++Uczy kultura nie mówić o bólu, nie mówić gdy leje się szampan
++Uczy kultura nie mówić o bólu, nie mówić gdy tańczony kankan
++Leje się wóda, nie gadaj, to skandal, dawaj, polewaj i wal pan, ej
++Dawaj, no skręcaj, pal pan, ej, ej (cichosza)
++Dawaj, zarabiaj ten szmal pan, ej, ej (cichosza)
++Walcz pan, tańcz pan, graj pan, ej, ej (cichosza)
++Bo nie ma Jezusa i nie ma Szatana, a wszystko przemija jak Panta Rhei
++Z drugiej strony z dobrym ziomkiem zdarza się czasem ci upić na smutno
++Wtedy ta skromność w prawdomówności nagle się zmienia w koszmarną rozrzutność
++Nagle wylały się stare emocje, które na co dzień trzymałeś pod kłódką
++Ale to powodowane jest wódką, będziesz zamykał je jutro
++Często nie mówię o trudach dziewczynie, mówią że facet nie może narzekać
++Studio, koncerty, pisanie i siłka, psychika musi zaczekać (musi zaczekać)
++Jedyne, co wyniosłem ze szkoły średniej to że jesteś głupi jak pytasz
++Do pokoju zwierzeń w pałacu pamięci prowadzi za długi korytarz
++
+
+commit cc145d9c3ed028239e4a554654671816d6a2e83f
+Author: lewczvk <wikalitw.02@gmail.com>
+Date:   Thu Oct 16 15:02:47 2025 +0200
+
+    Pierwszy refren
+
+diff --git a/refren1.txt b/refren1.txt
+new file mode 100644
+index 0000000..26ef7a8
+--- /dev/null
++++ b/refren1.txt
+@@ -0,0 +1,9 @@
++Refren 1:
++Głucha noc
++Miasto płacze znowu, czy wysłucha ktoś?
++Cichosza, cichosza
++Jest za cicho, także puszczaj to na blok (let's go!)
++Głucha noc
++Miasto płacze znowu, czy wysłucha ktoś?
++Cichosza, cichosza
++
+
+commit e9584c6c88cd105972ee53fe848ebe09e95211f5
+Author: lewczvk <wikalitw.02@gmail.com>
+Date:   Thu Oct 16 15:01:02 2025 +0200
+
+    Pierwsza zwrotka
+
+diff --git a/zwrotka1.txt b/zwrotka1.txt
+new file mode 100644
+index 0000000..8a0adfa
+--- /dev/null
++++ b/zwrotka1.txt
+@@ -0,0 +1,18 @@
++Zwrotka 1:
++Głucha noc, na ulicach ciągle cicho
++(Ziomek) mój ma ksywę Infantino, (bo się) nigdy nie rozstaje z FIFĄ
++(Toczy) noc się, tak jak każda inna, (znowu) pokłóciłem się z taryfą
++(Bowiem) chodzi tylko o zasady, gdzie bym się przejmował dychą? (dychą)
++Kolejny ziomek się rozstał z dziewczyną
++Nie odpowiada lecz wiem jaka prawda gdy pytanie zadam czy chodzi o inną (whoo)
++Starczy nam życiowych schodów, (Boże), poważnie wolimy windą (wolimy windą)
++Jak z kompletnym nieznajomym stoimy milcząc, widzę że boli go real talk (real talk)
++Nikt nie rozmawia w tym mieście (nikt)
++Płacisz dwie stówy za sesję, (po co?) żeby kłamać terapeucie?
++(Potem) kłamiesz ciągle też na necie, żyjesz od dekady w metaversie
++Jak ci brakuje ziomka, to mu napisz, "Siema tęsknię, " zrobisz mu dzień tym pewnie
++U mnie z tym także niełatwo, każdy mój problem zamiatam pod dywan
++Jest pod nim niemałe bagno, czasem się martwię co teraz tam pływa
++Nieraz zaglądam tam na dno, może coś złowię, do wersu się przyda
++Biorę do studia ten mandżur marny, ale ostatnio nieczęsto tam bywam
++
+diff --git "a/\357\200\272" "b/\357\200\272"
+deleted file mode 100644
+index 3f4e3db..0000000
+--- "a/\357\200\272"
++++ /dev/null
+@@ -1,56 +0,0 @@
+-Zwrotka 1:
+-Głucha noc, na ulicach ciągle cicho
+-(Ziomek) mój ma ksywę Infantino, (bo się) nigdy nie rozstaje z FIFĄ
+-(Toczy) noc się, tak jak każda inna, (znowu) pokłóciłem się z taryfą
+-(Bowiem) chodzi tylko o zasady, gdzie bym się przejmował dychą? (dychą)
+-Kolejny ziomek się rozstał z dziewczyną
+-Nie odpowiada lecz wiem jaka prawda gdy pytanie zadam czy chodzi o inną (whoo)
+-Starczy nam życiowych schodów, (Boże), poważnie wolimy windą (wolimy windą)
+-Jak z kompletnym nieznajomym stoimy milcząc, widzę że boli go real talk (real talk)
+-Nikt nie rozmawia w tym mieście (nikt)
+-Płacisz dwie stówy za sesję, (po co?) żeby kłamać terapeucie?
+-(Potem) kłamiesz ciągle też na necie, żyjesz od dekady w metaversie
+-Jak ci brakuje ziomka, to mu napisz, "Siema tęsknię, " zrobisz mu dzień tym pewnie
+-U mnie z tym także niełatwo, każdy mój problem zamiatam pod dywan
+-Jest pod nim niemałe bagno, czasem się martwię co teraz tam pływa
+-Nieraz zaglądam tam na dno, może coś złowię, do wersu się przyda
+-Biorę do studia ten mandżur marny, ale ostatnio nieczęsto tam bywam
+-
+-Refren 1:
+-Głucha noc
+-Miasto płacze znowu, czy wysłucha ktoś?
+-Cichosza, cichosza
+-Jest za cicho, także puszczaj to na blok (let's go!)
+-Głucha noc
+-Miasto płacze znowu, czy wysłucha ktoś?
+-Cichosza, cichosza
+-
+-Zwrotka 2:
+-Mój ziomo Boris na życie się targał
+-Dowiedziałem się po latach, kiedy nagrywał mi wersy na Jarmark
+-Uczy kultura nie mówić o bólu, nie mówić gdy leje się szampan
+-Uczy kultura nie mówić o bólu, nie mówić gdy tańczony kankan
+-Leje się wóda, nie gadaj, to skandal, dawaj, polewaj i wal pan, ej
+-Dawaj, no skręcaj, pal pan, ej, ej (cichosza)
+-Dawaj, zarabiaj ten szmal pan, ej, ej (cichosza)
+-Walcz pan, tańcz pan, graj pan, ej, ej (cichosza)
+-Bo nie ma Jezusa i nie ma Szatana, a wszystko przemija jak Panta Rhei
+-Z drugiej strony z dobrym ziomkiem zdarza się czasem ci upić na smutno
+-Wtedy ta skromność w prawdomówności nagle się zmienia w koszmarną rozrzutność
+-Nagle wylały się stare emocje, które na co dzień trzymałeś pod kłódką
+-Ale to powodowane jest wódką, będziesz zamykał je jutro
+-Często nie mówię o trudach dziewczynie, mówią że facet nie może narzekać
+-Studio, koncerty, pisanie i siłka, psychika musi zaczekać (musi zaczekać)
+-Jedyne, co wyniosłem ze szkoły średniej to że jesteś głupi jak pytasz
+-Do pokoju zwierzeń w pałacu pamięci prowadzi za długi korytarz
+-
+-Refren 2:
+-Głucha noc
+-Miasto płacze znowu, czy wysłucha ktoś?
+-Cichosza, cichosza (hej, hej)
+-Jest za cicho, także puszczaj to na blok (let's go)
+-Głucha noc
+-Miasto płacze znowu, czy wysłucha ktoś?
+-Cichosza, cichosza
+-Jest za cicho, także puszczaj to na blok
+-
+
+commit 4e82057138260babdf926d8320357c06e7afacba
+Author: lewczvk <wikalitw.02@gmail.com>
+Date:   Thu Oct 16 14:46:57 2025 +0200
+
+    cała piosenka
+
+diff --git a/piosenka.txt b/piosenka.txt
+new file mode 100644
+index 0000000..3f4e3db
+--- /dev/null
++++ b/piosenka.txt
+@@ -0,0 +1,56 @@
++Zwrotka 1:
++Głucha noc, na ulicach ciągle cicho
++(Ziomek) mój ma ksywę Infantino, (bo się) nigdy nie rozstaje z FIFĄ
++(Toczy) noc się, tak jak każda inna, (znowu) pokłóciłem się z taryfą
++(Bowiem) chodzi tylko o zasady, gdzie bym się przejmował dychą? (dychą)
++Kolejny ziomek się rozstał z dziewczyną
++Nie odpowiada lecz wiem jaka prawda gdy pytanie zadam czy chodzi o inną (whoo)
++Starczy nam życiowych schodów, (Boże), poważnie wolimy windą (wolimy windą)
++Jak z kompletnym nieznajomym stoimy milcząc, widzę że boli go real talk (real talk)
++Nikt nie rozmawia w tym mieście (nikt)
++Płacisz dwie stówy za sesję, (po co?) żeby kłamać terapeucie?
++(Potem) kłamiesz ciągle też na necie, żyjesz od dekady w metaversie
++Jak ci brakuje ziomka, to mu napisz, "Siema tęsknię, " zrobisz mu dzień tym pewnie
++U mnie z tym także niełatwo, każdy mój problem zamiatam pod dywan
++Jest pod nim niemałe bagno, czasem się martwię co teraz tam pływa
++Nieraz zaglądam tam na dno, może coś złowię, do wersu się przyda
++Biorę do studia ten mandżur marny, ale ostatnio nieczęsto tam bywam
++
++Refren 1:
++Głucha noc
++Miasto płacze znowu, czy wysłucha ktoś?
++Cichosza, cichosza
++Jest za cicho, także puszczaj to na blok (let's go!)
++Głucha noc
++Miasto płacze znowu, czy wysłucha ktoś?
++Cichosza, cichosza
++
++Zwrotka 2:
++Mój ziomo Boris na życie się targał
++Dowiedziałem się po latach, kiedy nagrywał mi wersy na Jarmark
++Uczy kultura nie mówić o bólu, nie mówić gdy leje się szampan
++Uczy kultura nie mówić o bólu, nie mówić gdy tańczony kankan
++Leje się wóda, nie gadaj, to skandal, dawaj, polewaj i wal pan, ej
++Dawaj, no skręcaj, pal pan, ej, ej (cichosza)
++Dawaj, zarabiaj ten szmal pan, ej, ej (cichosza)
++Walcz pan, tańcz pan, graj pan, ej, ej (cichosza)
++Bo nie ma Jezusa i nie ma Szatana, a wszystko przemija jak Panta Rhei
++Z drugiej strony z dobrym ziomkiem zdarza się czasem ci upić na smutno
++Wtedy ta skromność w prawdomówności nagle się zmienia w koszmarną rozrzutność
++Nagle wylały się stare emocje, które na co dzień trzymałeś pod kłódką
++Ale to powodowane jest wódką, będziesz zamykał je jutro
++Często nie mówię o trudach dziewczynie, mówią że facet nie może narzekać
++Studio, koncerty, pisanie i siłka, psychika musi zaczekać (musi zaczekać)
++Jedyne, co wyniosłem ze szkoły średniej to że jesteś głupi jak pytasz
++Do pokoju zwierzeń w pałacu pamięci prowadzi za długi korytarz
++
++Refren 2:
++Głucha noc
++Miasto płacze znowu, czy wysłucha ktoś?
++Cichosza, cichosza (hej, hej)
++Jest za cicho, także puszczaj to na blok (let's go)
++Głucha noc
++Miasto płacze znowu, czy wysłucha ktoś?
++Cichosza, cichosza
++Jest za cicho, także puszczaj to na blok
++
+diff --git "a/\357\200\272" "b/\357\200\272"
+new file mode 100644
+index 0000000..3f4e3db
+--- /dev/null
++++ "b/\357\200\272"
+@@ -0,0 +1,56 @@
++Zwrotka 1:
++Głucha noc, na ulicach ciągle cicho
++(Ziomek) mój ma ksywę Infantino, (bo się) nigdy nie rozstaje z FIFĄ
++(Toczy) noc się, tak jak każda inna, (znowu) pokłóciłem się z taryfą
++(Bowiem) chodzi tylko o zasady, gdzie bym się przejmował dychą? (dychą)
++Kolejny ziomek się rozstał z dziewczyną
++Nie odpowiada lecz wiem jaka prawda gdy pytanie zadam czy chodzi o inną (whoo)
++Starczy nam życiowych schodów, (Boże), poważnie wolimy windą (wolimy windą)
++Jak z kompletnym nieznajomym stoimy milcząc, widzę że boli go real talk (real talk)
++Nikt nie rozmawia w tym mieście (nikt)
++Płacisz dwie stówy za sesję, (po co?) żeby kłamać terapeucie?
++(Potem) kłamiesz ciągle też na necie, żyjesz od dekady w metaversie
++Jak ci brakuje ziomka, to mu napisz, "Siema tęsknię, " zrobisz mu dzień tym pewnie
++U mnie z tym także niełatwo, każdy mój problem zamiatam pod dywan
++Jest pod nim niemałe bagno, czasem się martwię co teraz tam pływa
++Nieraz zaglądam tam na dno, może coś złowię, do wersu się przyda
++Biorę do studia ten mandżur marny, ale ostatnio nieczęsto tam bywam
++
++Refren 1:
++Głucha noc
++Miasto płacze znowu, czy wysłucha ktoś?
++Cichosza, cichosza
++Jest za cicho, także puszczaj to na blok (let's go!)
++Głucha noc
++Miasto płacze znowu, czy wysłucha ktoś?
++Cichosza, cichosza
++
++Zwrotka 2:
++Mój ziomo Boris na życie się targał
++Dowiedziałem się po latach, kiedy nagrywał mi wersy na Jarmark
++Uczy kultura nie mówić o bólu, nie mówić gdy leje się szampan
++Uczy kultura nie mówić o bólu, nie mówić gdy tańczony kankan
++Leje się wóda, nie gadaj, to skandal, dawaj, polewaj i wal pan, ej
++Dawaj, no skręcaj, pal pan, ej, ej (cichosza)
++Dawaj, zarabiaj ten szmal pan, ej, ej (cichosza)
++Walcz pan, tańcz pan, graj pan, ej, ej (cichosza)
++Bo nie ma Jezusa i nie ma Szatana, a wszystko przemija jak Panta Rhei
++Z drugiej strony z dobrym ziomkiem zdarza się czasem ci upić na smutno
++Wtedy ta skromność w prawdomówności nagle się zmienia w koszmarną rozrzutność
++Nagle wylały się stare emocje, które na co dzień trzymałeś pod kłódką
++Ale to powodowane jest wódką, będziesz zamykał je jutro
++Często nie mówię o trudach dziewczynie, mówią że facet nie może narzekać
++Studio, koncerty, pisanie i siłka, psychika musi zaczekać (musi zaczekać)
++Jedyne, co wyniosłem ze szkoły średniej to że jesteś głupi jak pytasz
++Do pokoju zwierzeń w pałacu pamięci prowadzi za długi korytarz
++
++Refren 2:
++Głucha noc
++Miasto płacze znowu, czy wysłucha ktoś?
++Cichosza, cichosza (hej, hej)
++Jest za cicho, także puszczaj to na blok (let's go)
++Głucha noc
++Miasto płacze znowu, czy wysłucha ktoś?
++Cichosza, cichosza
++Jest za cicho, także puszczaj to na blok
++
