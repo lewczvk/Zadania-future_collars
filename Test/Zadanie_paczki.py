@@ -33,14 +33,6 @@ suma_pustych_kilogramów = liczba_paczek * 20 - waga_ogólna
 print(suma_pustych_kilogramów)
 print(numer_najlzejszej_paczki)
 print(waga_najlzejszej_paczki)
-
-
-
-
-
-
-
-
 print(waga_ogólna)
 print(liczba_paczek)
 
