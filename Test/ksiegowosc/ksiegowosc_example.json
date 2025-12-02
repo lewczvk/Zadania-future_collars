@@ -1,0 +1,32 @@
+[
+ {"nazwa_produktu": "pralka",
+  "cena_produktu": 1999.99,
+  "liczba_sztuk": 6}
+
+{"nazwa_produktu": "telewizor",
+  "cena_produktu": 4499.99,
+  "liczba_sztuk": 5}
+
+ {"nazwa_produktu": "lodowka",
+   "cena_produktu": 3599.99,
+   "liczba_sztuk": 4}
+
+ {"nazwa_produktu": "piekarnik",
+   "cena_produktu": 2999.99,
+   "liczba_sztuk": 7}
+
+ {"nazwa_produktu": "zamrazarka",
+   "cena_produktu": 1599.99,
+   "liczba_sztuk": 6}
+
+ {"nazwa_produktu": "laptop",
+   "cena_produktu": 3999.99,
+   "liczba_sztuk": 5}
+
+ {"nazwa_produktu": "glosnik",
+  "cena_produktu": 599.99,
+  "liczba_sztuk": 8}
+
+ {"nazwa_produktu": "zegarek",
+  "cena_produktu": 899.99,
+  "liczba_sztuk": 10}]
