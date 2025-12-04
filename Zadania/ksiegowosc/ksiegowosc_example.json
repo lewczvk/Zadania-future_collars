@@ -1,7 +1,5 @@
-{
-"saldo": 50000.0
-"historia": ["Dodano nowy produkt 'pralka'" , "Zakupiono 2 produkty 'telewizor'", "Sprzedano produkt o nazwie 'piekarnik'"]
-"ksiegowosc":[
+
+[
  {"nazwa_produktu": "pralka",
   "cena_produktu": 1999.99,
   "liczba_sztuk": 6}
@@ -32,6 +30,4 @@
 
  {"nazwa_produktu": "zegarek",
   "cena_produktu": 899.99,
-  "liczba_sztuk": 10}
-  ]
-  }
+  "liczba_sztuk": 10}]

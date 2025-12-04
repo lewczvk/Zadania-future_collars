@@ -29,6 +29,12 @@
 # Po wykonaniu dowolnej komendy (np. "saldo") aplikacja ponownie wyświetla informację o dostępnych komendach, a także prosi o wprowadzenie jednej z nich.
 # Zadbaj o błędy, które mogą się pojawić w trakcie wykonywania operacji (np. przy komendzie "zakup" jeśli dla produktu podamy ujemną kwotę, aplikacja powinna wyświetlić informację o niemożności wykonania operacji i jej nie wykonać). Zadbaj też o prawidłowe typy danych.
 
+from file_handler import file_handler
+
+saldo_firmy = file_handler.saldo_firmy
+system_ksiegowy = file_handler.system_ksiegowy
+historia = file_handler.historia
+
 saldo_firmy = 50000.0
 
 produkty = [
@@ -165,5 +171,7 @@ while True:
     case "8":
         print("Koniec działania programu.")
         break
+
+file_handler.save_data_to_file(new_saldo_firmy=saldo_firmy, new_historia=historia, new_system_ksiegowy=system_ksiegowy)
 
 
