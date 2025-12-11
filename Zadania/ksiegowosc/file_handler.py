@@ -1,16 +1,5 @@
 import json
 
-
-# def load_data():
-#     with open("ksiegowosc_example.json") as file:
-#         text = file.read()
-#         list_text = text.split("}")
-#         print(list_text)
-#         text = json.load(file)
-#         print(text)
-#
-# load_data()
-
 class FileHandler:
     def __init__(self, filepath):
         self.file = filepath
