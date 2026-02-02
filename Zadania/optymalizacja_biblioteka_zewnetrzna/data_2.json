@@ -7,7 +7,9 @@
         "2026-01-20": "Nie b\u0119dzie pada\u0107"
     },
     "Katowice": {
-        "2026-01-21": "Nie b\u0119dzie pada\u0107",
-        "2026-01-26": "B\u0119dzie pada\u0107"
+        "name": "Katowice"
+    },
+    "Opole": {
+        "name": "Opole"
     }
 }
