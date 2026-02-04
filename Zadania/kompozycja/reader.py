@@ -1,0 +1,59 @@
+"""Napisz program, który odczyta wejściowy plik CSV, następnie zmodyfikuje go i wyświetli w terminalu jego zawartość, a na końcu zapisze w wybranej lokalizacji.
+
+Uruchomienie programu przez terminal:
+python reader.py <plik_wejsciowy> <plik_wyjsciowy> <zmiana_1> <zmiana_2> ... <zmiana_n>
+
+ <plik_wejsciowy> - nazwa pliku, który ma zostać odczytany, np. in.csv
+ <plik_wyjsciowy> - nazwa pliku, do którego ma zostać zapisana zawartość, np. out.csv
+<zmiana_x> - Zmiana w postaci "x,y,wartosc" - x (kolumna) oraz y (wiersz) są współrzędnymi liczonymi od 0, natomiast "wartosc" zmianą która ma trafić na podane miejsce.
+
+Przykładowy plik wejściowy znajduje się w repozytorium pod nazwą "in.csv".
+
+Przykład działania:
+python reader.py in.csv out.csv 0,0,gitara 3,1,kubek 1,2,17 3,3,0
+Z pliku in.csv:
+drzwi,3,7,0
+kanapka,12,5,1
+pedzel,22,34,5
+plakat,czerwony,8,kij
+Ma wyjść plik out.csv:
+gitara,3,7,0
+kanapka,12,5,kubek
+pedzel,17,34,5
+plakat,czerwony,8,0"""
+
+import sys
+from file_handler import CSVFileHandler, TxtFileHandler, PickleFileHandler
+
+arguments = sys.argv[1:]
+print(arguments)
+
+file_handler = CSVFileHandler(input_file_path=arguments[0], output_file_path=arguments[1], transformations=arguments[2])
+file_handler.do_transformations()
+file_handler.save_data()
+
+input_file = arguments[0]
+output_file = arguments[1]
+
+if input_file.endswith('.csv'):
+    input_file_handler = CSVFileHandler(input_file_path=input_file, output_file_path=output_file, transformations=arguments[2:])
+elif input_file.endswith('.txt'):
+    input_file_handler = TxtFileHandler(input_file_path=input_file, output_file_path=output_file, transformations=arguments[2:])
+elif input_file.endswith('.pickle'):
+    input_file_handler = PickleFileHandler(input_file_path=input_file, output_file_path=output_file, transformations=arguments[2:])
+else:
+    raise ValueError("Unsupported file format")
+
+if output_file.endswith('.csv'):
+    output_file_handler = CSVFileHandler(input_file_path=input_file, output_file_path=output_file, transformations=arguments[2:])
+elif output_file.endswith('.txt'):
+    output_file_handler = TxtFileHandler(input_file_path=input_file, output_file_path=output_file, transformations=arguments[2:])
+elif output_file.endswith('.pickle'):
+    output_file_handler = PickleFileHandler(input_file_path=input_file, output_file_path=output_file, transformations=arguments[2:])
+else:
+    raise ValueError("Unsupported file format")
+
+input_file_handler.data = input_file_handler.load_data()
+input_file_handler.do_transformations()
+output_file_handler.data = input_file_handler.data
+output_file_handler.save_data()

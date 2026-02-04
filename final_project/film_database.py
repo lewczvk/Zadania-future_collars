@@ -1,9 +1,13 @@
 from file_handler import FileHandler
 import requests
 
-def get_data_from_api(title):
-    url = f"http://www.omdbapi.com/?title={title}&"
+def get_data_from_movie_api(title, year):
+    url = f"http://www.omdbapi.com/"
     response = requests.get(url=url)
+    print(response)
 
 title = input("Enter title: ")
-data = response.json()
+year = int(input("Enter year: "))
+
+get_data_from_movie_api(title, year)
+
