@@ -22,36 +22,25 @@ kanapka,12,5,kubek
 pedzel,17,34,5
 plakat,czerwony,8,0"""
 
+
 import sys
-from file_handler import CSVFileHandler, TxtFileHandler, PickleFileHandler
+from file_handler import CSVFileHandler, TxtFileHandler, PickleFileHandler, GenericFileHandler
 
 arguments = sys.argv[1:]
 print(arguments)
-
-file_handler = CSVFileHandler(input_file_path=arguments[0], output_file_path=arguments[1], transformations=arguments[2])
-file_handler.do_transformations()
-file_handler.save_data()
+print(len(arguments))
+# file_handler = CSVFileHandler(input_file_path=arguments[0], output_file_path=arguments[1], transformations=arguments[2])
+#arguments[2] przyjmuje stringa wiec nie dzialala logika z transofrmations.
+# file_handler.do_transformations()
+# file_handler.save_data()
 
 input_file = arguments[0]
 output_file = arguments[1]
+# print(len(arguments))
+input_file_handler = GenericFileHandler(input_file_path=input_file, output_file_path=output_file, transformations=arguments[2:])
+output_file_handler = GenericFileHandler(input_file_path=input_file, output_file_path=output_file, transformations=arguments[2:])
 
-if input_file.endswith('.csv'):
-    input_file_handler = CSVFileHandler(input_file_path=input_file, output_file_path=output_file, transformations=arguments[2:])
-elif input_file.endswith('.txt'):
-    input_file_handler = TxtFileHandler(input_file_path=input_file, output_file_path=output_file, transformations=arguments[2:])
-elif input_file.endswith('.pickle'):
-    input_file_handler = PickleFileHandler(input_file_path=input_file, output_file_path=output_file, transformations=arguments[2:])
-else:
-    raise ValueError("Unsupported file format")
 
-if output_file.endswith('.csv'):
-    output_file_handler = CSVFileHandler(input_file_path=input_file, output_file_path=output_file, transformations=arguments[2:])
-elif output_file.endswith('.txt'):
-    output_file_handler = TxtFileHandler(input_file_path=input_file, output_file_path=output_file, transformations=arguments[2:])
-elif output_file.endswith('.pickle'):
-    output_file_handler = PickleFileHandler(input_file_path=input_file, output_file_path=output_file, transformations=arguments[2:])
-else:
-    raise ValueError("Unsupported file format")
 
 input_file_handler.data = input_file_handler.load_data()
 input_file_handler.do_transformations()

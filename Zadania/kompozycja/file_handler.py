@@ -18,6 +18,7 @@ class FileHandler(ABC):
         pass
 
     def do_transformations(self):
+        #iterowanie po liście
         for transformation in self.transformations:
             # print(transformation)
             transformation_list = transformation.split(",")
@@ -72,3 +73,21 @@ class PickleFileHandler(FileHandler):
     def save_data(self):
         with open(self.output_file, "wb+") as file:
             pass
+
+
+#  Factory Pattern
+class GenericFileHandler:
+    """
+    A factory class to create appropriate FileHandler instances based on file extension.
+    """
+    def __new__(cls, input_file_path, output_file_path, transformations: list):
+        if input_file_path.endswith('.csv'):
+            return CSVFileHandler(input_file_path, output_file_path, transformations)
+        elif input_file_path.endswith('.txt'):
+            return TxtFileHandler(input_file_path, output_file_path, transformations)
+        elif input_file_path.endswith('.pickle'):
+            return PickleFileHandler(input_file_path, output_file_path, transformations)
+        else:
+            raise ValueError("Unsupported file format")
+
+
