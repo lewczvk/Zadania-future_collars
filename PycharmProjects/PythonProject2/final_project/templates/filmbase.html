@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Victoria's film database</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<div id="navigation">
+   <div id="first-div" class="divowe">
+        <h1>Filmbase</h1>
+   </div>
+
+    <div id="second-div" class="search">
+    <form action="/search" method="GET">
+        <button type="submit" id="search-button">Search</button>
+    </form>
+    </div>
+
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Runtime</th>
+        <th>Genre</th>
+        <th>Director</th>
+        <th>Writer</th>
+        <th>Actors</th>
+        <th>Plot</th>
+        <th>Awards</th>
+      </tr>
+        {% for film in films %}
+        <tr>
+            <td>{{film.title}}</td>
+            <td>{{film.year}}</td>
+            <td>{{film.runtime}}</td>
+            <td>{{film.genre}}</td>
+            <td>{{film.director}}</td>
+            <td>{{film.writer}}</td>
+            <td>{{film.actors}}</td>
+            <td>{{film.plot}}</td>
+            <td>{{film.awards}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

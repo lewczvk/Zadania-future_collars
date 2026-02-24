@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Victoria's film database</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div id="first-div" class="divowe">
+        <h1>Filmbase</h1>
+</div>
+
+<div>
+    <form id="engine" class="search-engine" action="/search" method="POST">
+        <h1 id="one">Search engine:</h1>
+        <input type="text" name="name" placeholder="Search for movie name...">
+        <input type="number" name="year" placeholder="Search for movie year...">
+        <button type="submit">Search</button>
+    </form>
+</div>
+</body>
+</html>

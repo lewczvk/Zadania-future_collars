@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Victoria's film database</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div id="first-div" class="divowe">
+        <h1>Filmbase</h1>
+</div>
+<a href="{{ url_for('home')}}">Home</a>
+
+<div class="movie-card">
+    <h2 id="last"> Results for:</h2>
+    <h2 id="title">{{ movie_info.Title }}</h2>
+    <div class="movie-details">
+        <p><strong>Title:</strong> {{ movie_info.Title }}</p>
+        <p><strong>Year:</strong> {{ movie_info.Year }}</p>
+        <p><strong>Runtime:</strong> {{ movie_info.Runtime }}</p>
+        <p><strong>Director:</strong>  {{ movie_info.Director }}</p>
+        <p><strong>Writer:</strong>  {{ movie_info.Writer }}</p>
+        <p><strong>Actors:</strong>  {{ movie_info.Actors }}</p>
+        <p><strong>Plot:</strong>  {{ movie_info.Plot }}</p>
+        <p><strong>Awards:</strong>  {{ movie_info.Awards }}</p>
+
+        <div id="image">
+            <img src="{{ movie_info['Poster'] }}" alt="Film poster" width="400">
+        </div>
+    </div>
+</div>
+
+<!--  <div id="second-div" class="ratings">-->
+<!--    <form action="/ratings" method="GET">-->
+<!--        <button type="submit">Rating</button>-->
+<!--    </form>-->
+<!--    </div>-->
+</body>
+</html>
